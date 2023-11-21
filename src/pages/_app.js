@@ -5,7 +5,5 @@ if (process.env.NODE_ENV === "development") {
 }
 
 export default function App({ Component, pageProps }) {
-  enableMocking();
-
   return <Component {...pageProps} />;
 }
