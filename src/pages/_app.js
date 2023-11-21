@@ -1,7 +1,7 @@
 import "@/components/styles/globals.css";
 
-if (process.env.NODE_ENV === "development") {
-  require("../mocks/browser");
+if (process.env.NEXT_PUBLIC_API_MOCKING === "enabled") {
+  require("../mocks");
 }
 
 export default function App({ Component, pageProps }) {
